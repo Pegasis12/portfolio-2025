@@ -1,0 +1,8 @@
+.header-bg{
+  box-sizing: border-box;
+  margin: 12px;
+  padding: 20px;
+  background: var(--cor-p2);
+  border-radius: 10px;
+  height: calc(100vh - 24px); /* 12px de margem em cima + 12px embaixo */
+}

@@ -1,0 +1,12 @@
+/* global */
+@import "./css/global/global.css";
+@import "./css/global/sidemenu.css";
+
+/* home */
+@import "./css/home/inicio.css";
+
+/* utilitarios */
+@import "./css/utilitarios/componestes.css";
+@import "./css/utilitarios/cores.css";
+@import "./css/utilitarios/formulario.css";
+@import "./css/utilitarios/tipografia.css";

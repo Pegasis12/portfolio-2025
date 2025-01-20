@@ -1,9 +1,11 @@
 /* global */
 @import "./css/global/global.css";
-@import "./css/global/sidemenu.css";
+@import "./css/global/sidenav.css";
+@import "./css/home/projetos.css";
 
 /* home */
 @import "./css/home/inicio.css";
+@import "./css/home/tecnologias.css";
 
 /* utilitarios */
 @import "./css/utilitarios/componestes.css";

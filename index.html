@@ -1,37 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- tipografia -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <title>pablo</title>
 </head>
+
 <body>
-  <header class="header-bg">
-    <div class="header">
+  <header class="sidenav-bg">
+    <div class="sidenav">
       <div class="menu-informacoes">
         <nav>
-          <h2 class="cor-s1">Informações</h2>
-          <ul class="cor-s1"> 
-            <li>Início</li>
-            <li>Projetos</li>
-            <li>TimeLine</li>
-            <li>Contato</li>
+          <h2 class="cor-s1 font-t1-m">Informações</h2>
+          <ul class="cor-s1 font-p2-n">
+            <li><img src="./Img/Icones-menu/inicio.svg" width="20" height="20"><span>Início</span></li>
+            <li><img src="./Img/Icones-menu/projetos.svg" width="20" height="20"><span>Projetos</span></li>
+            <li><img src="./Img/Icones-menu/timeline.svg" width="20" height="20"><span>TimeLine</span></li>
+            <li><img src="./Img/Icones-menu/contato.svg" width="20" height="20"><span>Contato</span></li>
           </ul>
         </nav>
       </div>
-
+      <hr>
       <div class="menu-links">
         <nav>
-          <h2 class="cor-s1">Links</h2>
-          <ul class="cor-s1"> 
-            <li>GitHub</li>
-            <li>Discord</li>
-            <li>Instagram</li>
+          <h2 class="cor-s1 font-t1-m">Links</h2>
+          <ul class="cor-s1 font-p2-n">
+            <li><img src="./Img/Icones-redes/github.svg" width="20" height="20"><span>GitHub</span></li>
+            <li><img src="./Img/Icones-redes/discord.svg" width="20" height="20"><span>Discord</span></li>
+            <li><img src="./Img/Icones-redes/instagram.svg" width="20" height="20"><span>Instagram</span></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
+
+  <main class="inicio container">
+    <div class="apresentacao">
+      <h1 class="cor-s1 font-t1-g">Olá! Meu nome é Pablo 👋</h1>
+      <p class="cor-s1 font-p2-n">Sou um <span class="destaque cor-0"><b>Desenvolvedor Front-end</b></span> de 23 anos com paixão por programação e um forte desejo de continuar aprendendo.</p>
+      <p class="cor-s1 font-p2-n">Cada desafio é uma oportunidade de crescimento para mim, e estou sempre buscando melhorar minhas habilidades técnicas e interpessoais.</p>
+      <p class="cor-s1 font-p2-n">Acredito que a colaboração é essencial para o sucesso.</p>
+    </div>
+
+    <div class="tecnologias">
+      <h2 class="cor-s1 font-t1-gm">Tecnologias</h2>
+      <p class="cor-s1 font-p2-n">Tecnologias que uso em meus projetos, e que tenho conhecimento.</p>
+      <div class="tecnologias-card">
+        <ul class="cor-s1 font-t1-me">
+          <li class="js"><img src="./Img/Icones-ferramentas/js.svg" width="20" height="20">JavaScript</li>
+          <li class="ts"><img src="./Img/Icones-ferramentas/typescript.svg" width="20" height="20">TypeScript</li>
+          <li class="react"><img src="./Img/Icones-ferramentas/react.svg" width="20" height="20">React</li>
+          <li class="tw"><img src="./Img/Icones-ferramentas/tailwind.svg" width="20" height="20">Tailwind</li>
+          <li class="node"><img src="./Img/Icones-ferramentas/node.svg" width="20" height="20">NodeJs</li>
+          <li class="figma"><img src="./Img/Icones-ferramentas/figma.svg" width="20" height="20">Figma</li>
+          <li class="wp"><img src="./Img/Icones-ferramentas/wordpress.svg" width="20" height="20">WordPress</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="projetos">
+      <h2 class="cor-s1 font-t1-gm">Projetos</h2>
+      <p class="cor-s1 font-p2-n">Projetos que eu estou desenvolvendo atualmente, <a class="link"  href="">ver mais projetos</a>.</p>
+      <div class="projetos-card">
+        <img src="./Img/webflux.jpg" alt="">
+        <div class="projetos-info">
+          <h2 class="cor-s1 font-t1-gm">WebFlux</h2>
+          <p class="cor-s1 font-p2-n">Soluções modernas em WordPress para destacar sua marca online com design exclusivo e performance otimizada.</p>
+          <div class="projetos-ferramentas">
+            <img src="./Img/Icones-ferramentas/figma.svg" alt="">
+            <img src="./Img/Icones-ferramentas/wordpress.svg" alt="">
+            <img src="./Img/Icones-ferramentas/js.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>

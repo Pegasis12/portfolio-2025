@@ -1,0 +1,59 @@
+.tecnologias {
+  margin-top: 40px;
+}
+
+.tecnologias h2 {
+  margin-bottom: 8px;
+}
+
+.tecnologias-card {
+  margin-top: 12px;
+}
+
+.tecnologias-card ul {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tecnologias-card li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  place-self: start;
+  background: var(--cor-p2);
+  border: solid 2px var(--cor-s2);
+}
+
+/* shadow */
+li.js:hover {
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 0px 2px 5px #ffdf00;
+}
+
+li.ts:hover {
+  box-shadow: 0px 2px 5px #3178c6;
+}
+
+li.react:hover {
+  box-shadow: 0px 2px 5px #00ded7;
+}
+
+li.tw:hover {
+  box-shadow: 0px 2px 5px #37bcf8;
+}
+
+li.node:hover {
+  box-shadow: 0px 2px 5px #48824a;
+}
+
+li.figma:hover {
+  box-shadow: 0px 2px 5px #ff4d12;
+}
+
+li.wp:hover {
+  box-shadow: 0px 2px 5px #00769d;
+}

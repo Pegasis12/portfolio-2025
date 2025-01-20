@@ -16,8 +16,8 @@
 }
 
 .projetos-info {
-  margin-top: 20px;
-  margin-right: 20px;
+  margin-top: 12px;
+  margin-right: 12px;
 }
 
 .projetos-info h2 {
@@ -30,30 +30,40 @@ a.link {
 }
 
 .projetos-ferramentas {
-  justify-self: end;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 8px;
 }
 
-.projetos-card > img {
+.projetos-img img {
   border-radius: 8px 0px 0px 8px;
   max-width: 200px;
+  height: 100%;
 }
 
 @media (max-width: 810px) {
+  .projetos-img img {
+    border-radius: 8px 8px 0px 0px;
+    max-width: 100%;
+    object-fit: cover;
+    height: 120px;
+  }
+
   .projetos-card {
     gap: 0px;
     display: flex;
     flex-direction: column;
   }
+
   .projetos-info {
     margin-left: 20px;
   }
-  .projetos-card > img {
-    max-width: 100%;
-    border-radius: 8px 8px 0px 0px;
+
+  .projetos-ferramentas {
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
 }

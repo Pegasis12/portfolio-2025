@@ -2,17 +2,32 @@
   grid-area: content;
   box-sizing: border-box;
   padding: 40px 80px 0px 80px;
-  height: 100vh;
 }
 
 .inicio h1 {
   margin-bottom: 8px;
 }
 
-.destaque {
+.destaque{
+  padding: 4px;
+  position: relative;
+}
+
+.destaque::before {
+  content: "";
+  width: 0%; /* Gradiente começa com 0% de largura */
+  height: 100%;
   background: linear-gradient(135deg, #3d3a8b, #a556f6);
   border-radius: 5px;
-  padding: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Mantém o gradiente atrás do texto */
+  transition: width 0.8s ease-in-out; /* Animação suave */
+}
+
+.destaque.carregando::before {
+  width: 100%; /* O gradiente se expande até preencher */
 }
 
 .apresentacao p {
@@ -26,7 +41,6 @@
 
 @media (max-width: 980px) {
   .inicio {
-    height: auto;
     padding: 30px 16px 30px 16px;
   }
 }

@@ -1,4 +1,8 @@
-.projetos {
+.projeto{
+  grid-area: content;
+}
+
+.projeto {
   margin-top: 40px;
 }
 
@@ -16,12 +20,12 @@
 }
 
 .projetos-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
   margin-top: 12px;
   margin-right: 12px;
-}
-
-.projetos-info h2 {
-  margin-bottom: 8px;
 }
 
 a.link {
@@ -49,21 +53,15 @@ a.link {
     border-radius: 8px 8px 0px 0px;
     max-width: 100%;
     object-fit: cover;
-    height: 120px;
+    height: 100px;
   }
 
   .projetos-card {
-    gap: 0px;
-    display: flex;
     flex-direction: column;
+    gap: 0px;
   }
 
   .projetos-info {
     margin-left: 20px;
-  }
-
-  .projetos-ferramentas {
-    margin-top: 12px;
-    margin-bottom: 12px;
   }
 }

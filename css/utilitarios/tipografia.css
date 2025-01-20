@@ -18,12 +18,24 @@
   font: 400 1rem/1.5 "Inter", sans-serif;
 }
 
+.font-p2-nm{
+  font: 400 0.9rem/1.55 "Inter", sans-serif;
+}
+
+.font-t1-gmm{
+  font: 600 1.3rem "Rubik", sans-serif;
+}
+
 @media (max-width: 800px){
   .font-t1-g {
     font: 600 1.2rem "Rubik", sans-serif;
   }
   
   .font-t1-gm {
+    font: 600 1.2rem "Rubik", sans-serif;
+  }
+
+  .font-t1-gmm{
     font: 600 1.2rem "Rubik", sans-serif;
   }
   

@@ -49,7 +49,6 @@
 @media (max-width: 980px) {
   .sidenav-bg{
     margin: 6px;
-    justify-content: center;
   }
 
   .sidenav li {
@@ -59,7 +58,7 @@
 
   .sidenav ul {
     margin-left: 0px;
-    place-self: center;
+    justify-self: center;
   }
 
   .sidenav hr {

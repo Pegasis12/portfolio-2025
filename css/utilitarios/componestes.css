@@ -9,6 +9,5 @@
 @media (max-width: 980px) {
   .container {
     padding: 30px 16px 30px 16px;
-    overflow: auto; /* Permite rolagem, se necessário */
   }
 }

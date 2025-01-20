@@ -10,7 +10,7 @@ body {
 
 @media (max-width: 980px) {
   body {
-    grid-template-columns: 90px 1fr;
+    grid-template-columns: 70px 1fr;
   }
 }
 

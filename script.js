@@ -1,7 +1,13 @@
-// Espera até que toda a página esteja carregada
-document.addEventListener("DOMContentLoaded", function () {
-  // Seleciona o elemento que tem a classe 'destaque'
-  var elementoDestaque = document.querySelector(".destaque");
-  // Adiciona a classe 'carregando' ao elemento
-  elementoDestaque.classList.add("carregando");
+// Espera a página carregar completamente
+document.addEventListener("DOMContentLoaded", () => {
+  // Seleciona o elemento com a classe 'destaque'
+  const destaque = document.querySelector(".destaque");
+
+  // Remove a classe 'carregando' caso já tenha sido adicionada
+  destaque.classList.remove("carregando");
+
+  // Reaplica a classe 'carregando' com um pequeno atraso
+  setTimeout(() => {
+    destaque.classList.add("carregando");
+  }, 50); // Pequeno atraso para reiniciar a animação
 });

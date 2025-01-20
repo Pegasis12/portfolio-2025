@@ -1,5 +1,5 @@
 // Espera a página carregar completamente
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
   // Seleciona o elemento com a classe 'destaque'
   const destaque = document.querySelector(".destaque");
 

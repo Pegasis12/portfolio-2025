@@ -58,3 +58,11 @@ li.figma:hover {
 li.wp:hover {
   box-shadow: 0px 2px 5px #00769d;
 }
+
+li.html:hover {
+  box-shadow: 0px 2px 5px #FC490B;
+}
+
+li.css:hover {
+  box-shadow: 0px 2px 5px #2196F3;
+}

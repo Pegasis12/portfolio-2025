@@ -1,6 +1,11 @@
 .sidenav-bg {
   grid-area: sidenav;
   box-sizing: border-box;
+  position: fixed;
+  width: 260px;
+  top: 0; /* Fixa no topo */
+  left: 0; /* Fixa na lateral esquerda */
+  z-index: 10; /* Garante que fique acima de outros elementos */
   margin: 12px;
   padding: 20px;
   background: var(--cor-p2);
@@ -23,10 +28,14 @@
   border-radius: 10px;
 }
 
-.sidenav a:hover {
+.menu-informacoes a:hover {
   color: white;
   background: var(--cor-p2);
   box-shadow: 0px 5px 10px var(--cor-p1);
+}
+
+.menu-links a:hover{
+  color: white;
 }
 
 .menu-informacoes {
@@ -47,12 +56,8 @@
 
 @media (max-width: 980px) {
   .sidenav-bg {
-    position: fixed;
-    top: 0; /* Fixa no topo */
-    left: 0; /* Fixa na lateral esquerda */
     height: calc(100vh - 12px);
     width: 60px; /* Largura fixa para a barra */
-    z-index: 10; /* Garante que fique acima de outros elementos */
     margin: 6px;
   }
 

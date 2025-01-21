@@ -1,6 +1,6 @@
 // animação color text
 // Espera a página carregar completamente
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
   // Seleciona o elemento com a classe 'destaque'
   const destaque = document.querySelector(".destaque");
 
@@ -12,6 +12,4 @@ document.addEventListener("DOMContentLoaded", function() {
     destaque.classList.add("carregando");
   }, 50); // Pequeno atraso para reiniciar a animação
 });
-
-
 

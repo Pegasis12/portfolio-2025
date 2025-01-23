@@ -21,9 +21,9 @@
 
 .timeline-linha::before {
   content: "";
-  left: -20px;
+  left: -30px;
   width: 2px;
-  background: linear-gradient(180deg, var(--cor-s2), var(--cor-s1));
+  background: var(--cor-p2);
   height: 100%;
   position: absolute;
 }
@@ -34,10 +34,59 @@
 
 .timeline-anos h2 {
   margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-anos h2::before{
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000000;
+  position: absolute;
+  left: -50px;
+}
+
+.timeline-anos h2::after{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--cor-p2);
+  border: solid 1px var(--cor-s2);
+  position: absolute;
+  left: -41px;
+  top: 9px;
 }
 
 @media (max-width: 980px) {
+  .timeline-linha::before {
+    left: -20px;
+  }
+  
+  .timeline-anos h2::before{
+    width: 26px;
+    height: 26px;
+    left: -32px;
+  }
+
+  .timeline-anos h2::after{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+
+    left: -26.4px;
+    top: 6px;
+  }
+
   .timeline-anos {
     margin-top: 60px;
+  }
+
+  .timeline-conteudo {
+    padding: 0px 36px;
+    margin-bottom: 40px;
   }
 }

@@ -12,4 +12,3 @@ document.addEventListener("DOMContentLoaded", () => {
     destaque.classList.add("carregando");
   }, 50); // Pequeno atraso para reiniciar a animação
 });
-

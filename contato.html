@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-  <title>TimeLine</title>
+  <title>Contato</title>
 </head>
 
 <body>
@@ -61,49 +61,27 @@
     </div>
   </aside>
 
-  <main class="timeline container">
-    <h2 class="cor-s1 font-t1-gm">TimeLine</h2>
-    <p class="cor-s1 font-p2-n">Uma visão dos meus principais marcos e aprendizados ao longo da jornada como desenvolvedor.</p>
-    <section class="timeline-conteudo" aria-label="timeline">
+  <main class="contato container">
+    <h2 class="cor-s1 font-t1-gm">Contato</h2>
+    <p class="cor-s1 font-p2-n">Preencha o formulário abaixo caso queira me contatar.</p>
 
-      <div class="timeline-linha">
-        <div class="timeline-anos">
-          <h2 class="cor-s2 font-t1-ga">2019</h2>
-          <p class="cor-s1 font-p2-n">Desde pequeno, sempre fui muito ligado a computadores. Passava horas jogando e explorando tudo o que podia. Mas foi só em 2019, no meu último ano do ensino médio, que realmente conheci o mundo da programação. Isso aconteceu graças a um grande amigo, que me apresentou essa área. A gente ficou tão empolgado que decidiu fazer alguns cursos pensando no futuro. Começamos com um curso de programação e desenvolvimento de jogos usando a UDK, uma engine já bem antiga. Só que as coisas não saíram como esperávamos. O curso era bem fraco, e no fim, a gente só copiava o conteúdo de uma apostila, sem nenhum professor para ensinar de verdade.</p>
-        </div>
-
-        <div class="timeline-anos">
-          <h2 class="cor-s2 font-t1-ga">2020</h2>
-          <p class="cor-s1 font-p2-n">Logo após terminar o ensino médio, decidi que queria fazer uma faculdade relacionada à tecnologia. Foi então que comecei a cursar Ciência da Computação na FUMEC, uma faculdade em Belo Horizonte. No início, as aulas eram no formato EAD, por conta da pandemia que enfrentávamos naquele ano. Porém, como a faculdade também teve que se adaptar de forma meio que forçada a esse modelo, a experiência de estudo acabou não sendo tão boa. Isso acabou me desmotivando e me levou a trancar o curso.</p>
-        </div>
-
-        <div class="timeline-anos">
-          <h2 class="cor-s2 font-t1-ga">2021</h2>
-          <p class="cor-s1 font-p2-n">Em 2021, decidi que era hora de aprender algumas coisas por conta própria. Comecei a estudar HTML, CSS e JavaScript e, aos poucos, fui pegando o básico de front-end com a ajuda do canal Curso em Vídeo no YouTube. No final desse mesmo ano, resolvi retomar a faculdade, ainda no modelo EAD. Graças aos cursos que fiz e à base que adquiri, consegui me destacar no primeiro semestre, o que me deu ainda mais motivação para continuar. Além disso, conquistei meu primeiro estágio na própria faculdade, atuando como helpdesk. Minha principal função era atender solicitações de alunos, como ajudá-los a resolver dificuldades, por exemplo, na hora de alterar a senha do sistema.</p>
-        </div>
-
-        <div class="timeline-anos">
-          <h2 class="cor-s2 font-t1-ga">2022</h2>
-          <p class="cor-s1 font-p2-n">Com a faculdade voltando ao modelo presencial, tive a chance de me conectar ainda mais com o universo da tecnologia. Nesse mesmo ano, consegui um novo estágio na Assembleia Legislativa de Minas Gerais, também como helpdesk, mas com responsabilidades maiores. Lá, além de atender solicitações técnicas, documentava processos, analisava e corrigia erros em softwares e oferecia suporte direto aos parlamentares. Foi uma experiência muito enriquecedora, que me ajudou a desenvolver tanto habilidades técnicas quanto interpessoais.</p>
-        </div>
-
-        <div class="timeline-anos">
-          <h2 class="cor-s2 font-t1-ga">2023</h2>
-          <p class="cor-s1 font-p2-n">Após concluir meu estágio na Assembleia, decidi aplicar meus conhecimentos para outras oportunidades. Foi então que encontrei uma vaga de estágio em desenvolvimento web na Hinova Soluções Digitais, uma associação de proteção veicular, no setor de marketing. Resolvi me candidatar e consegui a vaga. Ao entrar, enfrentei alguns desafios. Embora já tivesse experiência com HTML, CSS, JavaScript, Bootstrap e React, não tinha conhecimento em WordPress, que era amplamente utilizado pela empresa para criação de sites. Aprendi a ferramenta rapidamente, mas percebi que cerca de 90% dos sites estavam infectados, desatualizados ou mal configurados. Assim, recriei todos eles, garantindo segurança e funcionalidade.</p>
-        </div>
-
-        <div class="timeline-anos">
-          <h2 class="cor-s2 font-t1-ga">2024</h2>
-          <p class="cor-s1 font-p2-n">Decidi que era hora de me aprofundar ainda mais. Dediquei meu tempo a estudar UX e UI Design, além de aprimorar meus conhecimentos em HTML, CSS (explorando grids e flexbox) e JavaScript, com a ajuda de cursos, como os da Origamid. Esse esforço valeu a pena, e tive a oportunidade de crescer profissionalmente, passando de estagiário para desenvolvedor web júnior.</p>
-        </div>
-
-        <div class="timeline-anos">
-          <h2 class="cor-s2 font-t1-ga">2025</h2>
-          <p class="cor-s1 font-p2-n">Sigo firme nos estudos, sempre buscando aprender mais. Meu foco atual está em tecnologias como Tailwind, React e Next.js, mas também quero explorar muitas outras ao longo do ano!</p>
-        </div>
+    <form class="form" action="./contato.html" aria-label="Formulario">
+      <div>
+        <input placeholder="Nome" type="text" id="nome" name="nome">
+        <label for="">Nome</label>
       </div>
 
-    </section>
+      <div>
+        <input placeholder="E-mail" type="email" id="email" name="email">
+        <label for="">Nome</label>
+      </div>
+
+      <div>
+        <label for="mensagem">Mensagem</label>
+        <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+      </div>
+      <button>ENVIAR</button>
+    </form>
   </main>
   <script src="script.js"></script>
 </body>
